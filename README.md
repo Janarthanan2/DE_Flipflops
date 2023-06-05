@@ -43,14 +43,86 @@ In T flip flop, "T" defines the term "Toggle". In SR Flip Flop, we provide only 
 
 
 ## Program:
+SR-Flipflop
+     
+      module exp5a(s,r,clk,q,qbar);
+      input s,r,clk;
+      output reg q;
+      output qbar;
+      always@(posedge clk)
+      begin
+      q=s|((~r)&q);
+      end
+      assign qbar=~q;
+      endmodule
 
+D-Flipflop
+
+       module exp5b(d,clk,q,qbar);
+       input d,clk;
+       output reg q;
+       output qbar;
+       always@(posedge clk)
+       begin
+       q=((~q)&d)|(q&d);
+       end
+       assign qbar=~q;
+       endmodule
+
+JK-Flipflop
+
+       module exp5c(j,k,clk,q,qbar);
+       input j,k,clk;
+       output reg q;
+       output qbar;
+       always@(posedge clk)
+       begin
+       q=((~q)&j)|(q&(~k));
+       end
+       assign qbar=~q;
+       endmodule
+
+T-Flipflop
+
+       module exp5d(t,clk,q,qbar);
+       input t,clk;
+       output reg q;
+       output qbar;
+       always@(posedge clk)
+       begin
+       q=((~q)&t)|(q&(~t));
+       end
+       assign qbar=~q;
+       endmodule
 
 ## RTL Schematic:
+SR Flipfliop
+![243385920-99b8b183-7abc-4c1c-845c-7e1eef20753f](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/3e4666b3-2daa-4342-997d-c2c7a156a285)
+
+D Flipflop
+![243386311-0e8f902a-a09d-4c54-9a69-9e21057e30f3](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/733cf443-a4c9-4da8-a659-61c7416c7474)
+
+JK Flipflop
+![243386674-06bc9278-0394-40bf-8d8c-4e085d1bedd4](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/af6b4e28-d814-48f8-9236-1ccab4e9a683)
+
+T Flipflop
+![243387009-c7b48d54-fd23-4e52-b13e-d6928376d7eb](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/199d7b86-a583-4130-8b07-d86441492cec)
 
 
 
 
 ## Timing Diagram:
+SR Flipfliop
+![243386131-6db9eb63-423c-413a-a3f8-6dac040ed8f1](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/f3bd1563-435d-4f68-be96-7c02627debf2)
+
+D Flipflop
+![243386408-f5367dbb-4a49-4f96-a807-05e2dac7daf7](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/ddb8ab91-22de-4408-920b-bf1646ceda40)
+
+JK Flipflop
+![243386877-e670db0f-ca85-4189-829e-c829a1231c06](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/d2f52edd-dfe3-442d-bc17-dfc0b7b9c399)
+
+T Flipflop
+![243387084-cccdccd4-0de4-4f21-ac1f-67ff58d2caff](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/176aa714-9eb2-4e7c-b6c3-d8d9fa655ac1)
 
 
 
