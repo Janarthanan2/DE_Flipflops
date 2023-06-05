@@ -113,15 +113,24 @@ T Flipflop
 
 ## Timing Diagram:
 SR Flipfliop
+
+
 ![243386131-6db9eb63-423c-413a-a3f8-6dac040ed8f1](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/f3bd1563-435d-4f68-be96-7c02627debf2)
 
 D Flipflop
+
+
 ![243386408-f5367dbb-4a49-4f96-a807-05e2dac7daf7](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/ddb8ab91-22de-4408-920b-bf1646ceda40)
 
 JK Flipflop
+
+
 ![243386877-e670db0f-ca85-4189-829e-c829a1231c06](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/d2f52edd-dfe3-442d-bc17-dfc0b7b9c399)
 
+
 T Flipflop
+
+
 ![243387084-cccdccd4-0de4-4f21-ac1f-67ff58d2caff](https://github.com/Janarthanan2/DE_Flipflops/assets/119393515/176aa714-9eb2-4e7c-b6c3-d8d9fa655ac1)
 
 
